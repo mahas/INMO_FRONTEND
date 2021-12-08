@@ -1,0 +1,95 @@
+<div class="row">
+    <h3 class="center-align">Agregar Inmueble</h3>
+    <article class="col s6 offset-s3">
+        <form [formGroup]="fgValidador" (ngSubmit)="GuardarInmueble()" method="POST" action="formulario-contacto.php">
+            <div class="input-field">
+                <label for="nombre">Nombre</label>
+                <input formControlName="nombre" type="text" name="nombre" required>
+            </div>
+
+            <div class="input-field">
+                <label for="fechaRegistro">Fecha de registro</label>
+                <input formControlName="fechaRegistro" type="text" name="fechaRegistro" required>
+            </div>
+
+            <div class="input-field">
+                <label for="tipoInmueble">Tipo de inmueble</label>
+                <input formControlName="tipoInmueble" type="text" name="tipoInmueble" required>
+            </div>
+
+            <div class="input-field">
+                <label for="valor">Precio</label>
+                <input formControlName="valor" type="number" name="valor" required>
+            </div>
+
+
+            <div class="input-field">
+                <label for="foto">Imagen</label>
+                <input formControlName="foto" type="text" name="foto" required>
+            </div>
+            
+            <div class="input-field">
+                <label for="tipoOferta">Tipo de oferta</label>
+                <input formControlName="tipoOferta" type="text" name="tipoOferta" required>
+            </div>
+
+            <div class="input-field">
+                <label for="descripcion">Descripción</label>
+                <input formControlName="descripcion" type="text" name="descripcion" required>
+            </div>
+            
+            <div class="input-field">
+                <label for="direccion">Dirección</label>
+                <input formControlName="direccion" type="text" name="direccion" required>
+            </div>
+            
+            <div class="input-field">
+                <label for="comisionVenta">Comisión en caso de venta</label>
+                <input formControlName="comisionVenta" type="number" name="comisionVenta">
+            </div>
+            
+            <div class="input-field">
+                <label for="comisionArriendo">Comisión en caso de alquiler</label>
+                <input formControlName="comisionArriendo" type="number" name="comisionArriendo">
+            </div>
+             
+            <div class="input-field">
+                <label for="propietario">Nombre del propietario</label>
+                <input formControlName="propietario" type="text" name="propietario" requiered>
+            </div>
+             
+            <div class="input-field">
+                <label for="dirPropietario">Dirección del propietario</label>
+                <input formControlName="dirPropietario" type="text" name="dirPropietario" required>
+            </div>
+            
+            <div class="input-field">
+                <label for="telPropietario">Teléfono del propietario</label>
+                <input formControlName="telPropietario" type="text" name="telPropietario" requiered>
+            </div>
+             
+            <div class="input-field">
+                <label for="emailPropietario">Correo electrónico del propietario</label>
+                <input formControlName="emailPropietario" type="text" name="emailPropietario" requiered>
+            </div>
+             
+            <div class="input-field">
+                <label for="youtube">Enlace a Youtube</label>
+                <input formControlName="youtube" type="text" name="youtube" >
+            </div>
+             
+            <div class="input-field">
+                <label for="estado">Estado</label>
+                <input formControlName="estado" type="text" name="estado" requiered>
+            </div>
+             
+
+            <p class="center-align">
+                <button [disabled]="!fgValidador.valid" class="waves-effect waves-light btn" type="submit"><i
+                        class="material-icons right">send</i>Enviar</button>
+            </p>
+
+        </form>
+
+    </article>
+</div>
