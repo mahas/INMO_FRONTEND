@@ -1,4 +1,6 @@
+<p></p>
 <a routerLink="/administracion/crear-inmueble" class="btn">Nuevo Inmueble</a>
+<p></p>
 <table class="table responsive">
     <thead>
         <tr>
@@ -6,7 +8,16 @@
                 Nombre
             </th>
             <th>
+                Tipo
+            </th>
+            <th>
                 Precio
+            </th>
+            <th>
+                Dirección
+            </th>
+            <th>
+                Descripción
             </th>
             <th>
                 Imagen
@@ -22,13 +33,22 @@
                 {{p.nombre}}
             </td>
             <td>
+                {{p.tipoInmueble}}
+            </td>
+            <td>
                 {{p.valor}}
+            </td>
+            <td>
+                {{p.direccion}}
+            </td>
+            <td>
+                {{p.descripcion}}
             </td>
             <td>
                 <img src="{{p.foto}}" class="imagenProdcuto" />
             </td>
             <td>
-                <a routerLink="/administracion/editar-inmueble/{{p.id}}" class="btn">Editar Inmueble</a>
+                <a routerLink="/administracion/editar-inmueble/{{p.id}}" class="btn">Editar</a>
             </td>
         </tr>
     </tbody>

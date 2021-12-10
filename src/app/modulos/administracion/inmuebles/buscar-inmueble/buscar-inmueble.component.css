@@ -1,3 +1,9 @@
 .imagenProdcuto{
     width: 100px;
 }
+tbody{
+    color: white;
+}
+thead{
+    color: whitesmoke;
+}

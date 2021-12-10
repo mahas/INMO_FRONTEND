@@ -31,7 +31,7 @@ id:string = '';
   });
 
   constructor(private fb: FormBuilder,
-    private servicioProdcuto: InmuebleService,
+    private servicioInmueble: InmuebleService,
     private router: Router,
     private route: ActivatedRoute) { }
 
@@ -41,7 +41,7 @@ id:string = '';
   }
 
   BuscarInmueble(){
-    this.servicioProdcuto.ObtenerRegistroPorId(this.id).subscribe((datos: ModeloInmueble) => {
+    this.servicioInmueble.ObtenerRegistroPorId(this.id).subscribe((datos: ModeloInmueble) => {
       this.fgValidador.controls["id"].setValue(this.id);
       this.fgValidador.controls["nombre"].setValue(datos.nombre);
       this.fgValidador.controls["valor"].setValue(datos.valor);
@@ -100,7 +100,7 @@ id:string = '';
     p.youtube = youtube;
     p.estado = estado;
     p.id = this.id;
-    this.servicioProdcuto.ActualizarInmueble(p).subscribe((datos: ModeloInmueble) => {
+    this.servicioInmueble.ActualizarInmueble(p).subscribe((datos: ModeloInmueble) => {
       alert("Inmueble actualizado correctamente");
       this.router.navigate(["/administracion/listar-inmuebles"]);
     }, (error: any) => {
