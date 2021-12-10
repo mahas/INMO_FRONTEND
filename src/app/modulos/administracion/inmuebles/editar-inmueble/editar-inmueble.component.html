@@ -9,17 +9,79 @@
             </div>
 
             <div class="input-field">
-                <label for="precio" class="active">Precio</label>
-                <input formControlName="precio" type="text" name="precio" required>
+                <label for="valor" class="active">Precio</label>
+                <input formControlName="valor" type="text" name="valor" required>
             </div>
 
             <div class="input-field">
-                <label for="imagen" class="active">Imagen</label>
-                <input formControlName="imagen" type="text" name="imagen" required>
+                <label for="tipoInmueble" class="active">Tipo</label>
+                <input formControlName="tipoInmueble" type="text" name="tipoInmueble" required>
+            </div>
+
+            <div class="input-field">
+                <label for="direccion" class="active">Dirección</label>
+                <input formControlName="direccion" type="text" name="direccion" required>
+            </div>
+
+            <div class="input-field">
+                <label for="descripcion" class="active">Descripción</label>
+                <input formControlName="descripcion" type="text" name="descripcion" required>
+            </div>
+
+            <div class="input-field">
+                <label for="fechaRegistro" class="active">Fecha de registro</label>
+                <input formControlName="descripcion" type="text" name="descripcion" required>
+            </div>
+
+            <div class="input-field">
+                <label for="tipoOferta" class="active">Tipo de oferta</label>
+                <input formControlName="tipoOferta" type="text" name="tipoOferta" required>
+            </div>
+
+            <div class="input-field">
+                <label for="comisionVenta" class="active">Comisión Venta</label>
+                <input formControlName="comisionVenta" type="number" name="comisionVenta" required>
+            </div>
+
+            <div class="input-field">
+                <label for="comisionArriendo" class="active">Comisión Arriendo</label>
+                <input formControlName="comisionArriendo" type="number" name="comisionArriendo" required>
+            </div>
+
+            <div class="input-field">
+                <label for="propietario" class="active">Propietario</label>
+                <input formControlName="propietario" type="text" name="propietario" required>
+            </div>
+
+            <div class="input-field">
+                <label for="dirPropietario" class="active">Dirección Propietario</label>
+                <input formControlName="dirPropietario" type="text" name="dirPropietario" required>
+            </div>
+
+            <div class="input-field">
+                <label for="emailPropietario" class="active">Correo electrónico Propietario</label>
+                <input formControlName="emailPropietario" type="text" name="emailPropietario" required>
+            </div>
+
+            <div class="input-field">
+                <label for="youtube" class="active">Link Youtube</label>
+                <input formControlName="youtube" type="text" name="youtube" required>
+            </div>
+
+            
+            <div class="input-field">
+                <label for="estado" class="active">Estado</label>
+                <input formControlName="estado" type="text" name="estado" required>
+            </div>
+
+
+            <div class="input-field">
+                <label for="foto" class="active">Imagen</label>
+                <input formControlName="foto" type="text" name="foto" required>
             </div>
 
             <p class="center-align">
-                <button [disabled]="!fgValidador.valid" class="waves-effect waves-light btn" type="submit"><i
+                <button [disabled]="fgValidador.valid" class="waves-effect waves-light btn" type="submit"><i
                         class="material-icons right">send</i>Enviar</button>
             </p>
 
