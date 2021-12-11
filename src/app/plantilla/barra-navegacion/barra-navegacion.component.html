@@ -1,26 +1,27 @@
-
-   
-<nav>
-  <div class="nav-wrapper">
-    <a routerLink="/inicio" class="brand-logo"><img src='https://ricardopelaez.com/crypto.png' alt="Inicio"></a>
-    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    <ul class="right hide-on-med-and-down">
-      <li *ngIf="seInicioSesion"><a routerLink="/administracion/personas">Personas</a></li>
-      <li *ngIf="seInicioSesion"><a routerLink="/administracion/listar-inmuebles">Inmuebles</a></li>
-      <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cambioClave">Cambiar Clave</a></li>
-      <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cerrarSesion">Cerrar Sesión</a></li>
-      <li *ngIf="!seInicioSesion"><a routerLink="/seguridad/identificar">Iniciar Sesión</a></li>
-    </ul>
-  </div>
-</nav>
-
-<ul class="sidenav" id="mobile-demo">
-  <li *ngIf="seInicioSesion"><a routerLink="/administracion/personas">Personas</a></li>
-  <li *ngIf="seInicioSesion"><a routerLink="/administracion/listar-productos">Productos</a></li>
-  <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cambioClave">Cambiar Clave</a></li>
-  <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cerrarSesion">Cerrar Sesión</a></li>
-  <li *ngIf="!seInicioSesion"><a routerLink="/seguridad/identificar">Iniciar Sesión</a></li>
-</ul>
+<div class = "container">
+  <nav>
+    <div class="nav-wrapper" >
+      <a id="log" routerLink="/inicio" class="brand-logo" ><img src='https://ricardopelaez.com/crypto.png' alt="Inicio"></a>
+      <a class="navbar navbar-expand-lg navbar-dark navbar-full bg-primary" href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+     
+      <ul class="right hide-on-med-and-down init">
+        <li *ngIf="seInicioSesion"><a class="ini" routerLink="/administracion/personas">Personas</a></li>
+        <li *ngIf="seInicioSesion"><a class="ini" routerLink="/administracion/listar-inmuebles">Inmuebles</a></li>
+        <li *ngIf="seInicioSesion"><a class="ini" routerLink="/seguridad/cambioClave">Cambiar Clave</a></li>
+        <li *ngIf="seInicioSesion"><a class="ini" routerLink="/seguridad/cerrarSesion">Cerrar Sesión</a></li>
+        <li *ngIf="!seInicioSesion"><a class="init" routerLink="/seguridad/identificar">Iniciar Sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <ul class="sidenav" id="mobile-demo">
+    <li *ngIf="seInicioSesion"><a routerLink="/administracion/personas">Personas</a></li>
+    <li *ngIf="seInicioSesion"><a routerLink="/administracion/listar-productos">Productos</a></li>
+    <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cambioClave">Cambiar Clave</a></li>
+    <li *ngIf="seInicioSesion"><a routerLink="/seguridad/cerrarSesion">Cerrar Sesión</a></li>
+    <li *ngIf="!seInicioSesion"><a routerLink="/seguridad/identificar">Iniciar Sesión</a></li>
+  </ul>
+</div>
     
 
 

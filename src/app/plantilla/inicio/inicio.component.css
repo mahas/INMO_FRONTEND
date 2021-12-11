@@ -1,30 +1,30 @@
 .fondo{
-    background-image: linear-gradient(rgb(174, 176, 161), rgb(12, 34, 34));
+    background-image: linear-gradient(rgb(174, 187, 168), rgb(0, 0, 0));
 }
 
 :root{
-    --card-color: rgba(54, 0, 204, 0.555);
+    --card-color: rgba(238, 121, 11, 0.767);
     --card-header-color: crimson;
     --card-body-color: rgb(40, 4, 124);
     --card-footer-color: indigo;
  }
  .card{
      margin: 0 left;
-     background-image: linear-gradient(rgb(105, 124, 235), rgb(12, 34, 34));
+     background-image: linear-gradient(rgb(235, 194, 105), rgb(84, 167, 16));
      color:rgb(255, 255, 255);
      width: 400px;
      padding: 20px;
-     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+     box-shadow: 0px 10px 15px rgba(199, 18, 18, 0.377);
      border-radius: 20px;            
  }
 
  .card2{
     margin: 0 auto;
-    background-image: linear-gradient(rgb(247, 128, 247), rgb(59, 94, 147));
+    background-image: linear-gradient(rgb(116, 105, 6), rgb(59, 94, 147));
     color:rgb(255, 255, 255);
     width: 400px;
     padding: 20px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+    box-shadow: 0px 10px 15px rgba(228, 18, 18, 0.377);
     border-radius: 20px;            
 }
 
@@ -68,7 +68,7 @@
 
  .slide {
     position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    box-shadow: 0px 1px 6px rgba(18, 142, 180, 0.64);
     margin-top: 26px;
 }
 
@@ -118,15 +118,15 @@
 }
 
 .slide-control.prev {
-    left: 2%;
+    left: 5px;
 }
 
 .slide-control.next {
-    right: 2%;
+    right: 5px;
 }
 
 .slide-control:hover {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(226, 29, 29, 0.8);
     color: #aaaaaa;
 }
 
